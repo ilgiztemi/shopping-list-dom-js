@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  background-color: rgb(246, 246, 239);
+  border-radius: 10px;
+  border: 2px solid rgb(213, 209, 209);
+  width: 600px;
+  height: 500px;
+  margin: 15% auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.container .added {
+  position: absolute;
+  padding: 5px;
+  background-color: rgb(191, 242, 191);
+  width: 55%;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  display: none;
+}
+.container .header {
+  margin-top: 70px;
+  letter-spacing: 8px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.container .span {
+  width: 100%;
+  text-align: center;
+}
+.container .input {
+  width: 80%;
+  padding-left: 20px;
+  line-height: 25px;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container .btn {
+  padding: 6px 15px;
+  border: none;
+  background-color: skyblue;
+  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.container .list {
+  width: 85%;
+  overflow-y: scroll;
+  margin-top: 15px;
+}
+.container .list li:hover {
+  background-color: rgb(229, 224, 224);
+  border-radius: 10px;
+}
+.container .list li {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.container .list li i {
+  text-align: right;
+}
+.container .list li {
+  align-self: center;
+  overflow-x: hidden;
+}
+.container .list li .fa-pen-to-square:hover {
+  color: rgb(72, 162, 72);
+}
+.container .list li .fa-pen-to-square {
+  color: lightgreen;
+  font-size: 13px;
+  cursor: pointer;
+}
+.container .list li .fa-trash:hover {
+  color: rgb(208, 67, 67);
+}
+.container .list li .fa-trash {
+  color: lightcoral;
+  cursor: pointer;
+  font-size: 13px;
+}
+.container .clear {
+  display: none;
+  color: rgb(243, 65, 65);
+  padding: 5px;
+  width: 92%;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
